@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class"
+      };
+    </script>
+    <script>
+      function theme(event) {
+        console.log("theme");
+        document.documentElement.classList.toggle("dark");
+      }
+    </script>
+    <title>Dark Mode</title>
+  </head>
+  <body>
+    <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
+    <p class="dark:text-yellow-500 text-3xl text-red-500 text-center font-bold">Dark Mode</p>
+    <div class="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow-xl">
+      <h3 class="text-slate-900 dark:text-white font-medium tracking-light">Hello I am siddharth</h3>
+      <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat praesentium sint nisi quam, voluptatibus ea sequi enim omnis similique possimus in, nostrum vitae tempora labore fugiat est, harum quasi eum. Dolorum provident recusandae ratione inventore, voluptas quibusdam pariatur fugiat perferendis quisquam doloribus ab asperiores vitae eveniet! Vel, voluptatum! Voluptates sunt optio omnis, vitae reiciendis tenetur? Facilis odit deleniti vitae nostrum. Assumenda quam suscipit ea? Explicabo debitis laudantium officia dignissimos quis id ex suscipit necessitatibus amet at tempora inventore dolor repellat mollitia, aut perferendis, commodi alias nesciunt provident, similique totam expedita!</p>
+    </div>
+
+    <div class="flex flex-col w-full items-center justify-evenly mt-10">
+      <button title="Toggle Theme" onclick="theme()" class="w-12 h-6 rounded-full p-1 bg-black dark:bg-white relative transition-colors duration-500 ease-in focus:outline-none focus:ring-2 focus:ring-green-700 dark:focus:ring-green-600 focus:border-transparent">
+        <div id="toggle" class="rounded-full w-4 h-4 bg-green-600 dark:bg-green-500 relative ml-0 dark:ml-6 pointer-events-none transition-all duration-300 ease-out"></div>
+      </button>
+      Toggle for Dark mode
+    </div>
+  </body>
+</html>
+
+<!-- Credit for toggle button style
+https://tailwindcomponents.com/component/toggle-switch
+ -->

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS</title>
+  </head>
+  <body>
+    <!-- Positioning -->
+    <p class="text-2xl font-bold">Positioning</p>
+    <div class="relative h-12 bg-red-200 w-1/2">
+      <p>parent element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>absolute child</p>
+      </div>
+    </div>
+    <br />
+
+    <!-- Top left corner -->
+    <p class="text-2xl font-bold">Top left corner</p>
+    <div class="relative h-32 bg-yellow-200 w-32">
+      <div class="absolute left-0 top-0 h-16 w-15 bg-yellow-300 bg-red-500">top-left</div>
+    </div>
+    <br />
+
+    <!-- Top right corner -->
+    <p class="text-2xl font-bold">Top right corner</p>
+    <div class="relative h-32 bg-yellow-200 w-32">
+      <div class="absolute right-0 top-0 h-16 w-15 bg-yellow-300 bg-red-500">top-right</div>
+    </div>
+    <br />
+
+    <!-- Bottom left corner -->
+    <p class="text-2xl font-bold">Bottom left corner</p>
+    <div class="relative h-32 bg-yellow-200 w-32">
+      <div class="absolute left-0 bottom-0 h-16 w-15 bg-yellow-300 bg-red-500">bot-left</div>
+    </div>
+    <br />
+
+    <!-- Bottom right corner -->
+    <p class="text-2xl font-bold">Bottom right corner</p>
+    <div class="relative h-32 bg-yellow-200 w-32">
+      <div class="absolute right-0 bottom-0 h-16 w-15 bg-yellow-300 bg-red-500">bot-right</div>
+    </div>
+    <br />
+
+    <!-- Span top edge -->
+    <p class="text-2xl font-bold">Span top edge</p>
+    <div class="relative h-32 bg-yellow-200 w-32">
+      <div class="absolute inset-x-0 h-16 bg-yellow-300 bg-red-500"></div>
+    </div>
+    <br />
+
+    <!-- Span left edge -->
+    <p class="text-2xl font-bold">Span left edge</p>
+    <div class="relative h-32 bg-yellow-200 w-32">
+      <div class="absolute inset-y-0 w-16 bg-yellow-300 bg-red-500"></div>
+    </div>
+    <br />
+
+    <!-- Span right edge -->
+    <p class="text-2xl font-bold">Span right edge</p>
+    <div class="relative h-32 bg-yellow-200 w-32">
+      <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300 bg-red-500"></div>
+    </div>
+    <br />
+
+    <!-- Span bottom edge -->
+    <p class="text-2xl font-bold">Span bottom edge</p>
+    <div class="relative h-32 bg-yellow-200 w-32">
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300 bg-red-500"></div>
+    </div>
+    <br />
+
+    <!-- Display Classes -->
+    <p class="text-2xl font-bold">Span bottom edge</p>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus, suscipit aliquam cum quia consectetur <span class="text-2xl font-bold inline">This is inline span</span>praesentium tempore molestias quasi porro dolor sed ipsa ad sapiente dicta, accusantium quidem ea accusamus. Sapiente quasi ratione laborum<span class="text-2xl font-bold inline-block">This is inline-block span</span> cumque provident recusandae corrupti! Molestiae enim, dolorem nemo id et ratione<span class="text-2xl font-bold block">this is block</span> facere libero dolores doloribus est laboriosam, delectus laudantium labore inventore nostrum temporibus consequuntur,<span class="text-2xl font-bold hidden">this is hidden</span> consectetur aspernatur.</div>
+    <br />
+
+    <!-- Z-Index -->
+    <p class="text-2xl font-bold">Z-Index</p>
+    <div class="relative h-36">
+      <div class="absolute z-40 left-10 w-24 h-24 bg-blue-200 text-bold text-2xl">1</div>
+      <div class="absolute left-20 w-24 h-24 bg-blue-400 text-bold text-2xl">2</div>
+      <div class="absolute z-10 left-40 w-24 h-24 bg-blue-600 text-bold text-2xl">3</div>
+      <div class="absolute z-20 left-60 w-24 h-24 bg-blue-800 text-bold text-2xl">4</div>
+      <div class="absolute z-30 left-80 w-24 h-24 bg-blue-900 text-bold text-2xl">5</div>
+    </div>
+    <br />
+
+    <!-- Floats -->
+    <p class="text-2xl font-bold">Float-Right</p>
+    <div class="w-1/2">
+      <img class="h-48 w-48 float-right m-4" src="../assets/img/img1.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit consectetur atque, quibusdam temporibus impedit doloremque quo eligendi accusamus. Porro a cumque dolor eaque voluptates modi cum. Accusantium alias aliquid consequuntur.
+        In doloremque maiores architecto sed soluta qui. Eveniet voluptate nobis iure, porro possimus in, libero alias excepturi est beatae, dolor dicta laudantium corporis ipsa? Repellat vitae reiciendis quisquam consectetur natus?</p>
+      </img>
+    </div>
+    <br />
+    <p class="text-2xl font-bold">Float-Left</p>
+    <div class="w-1/2">
+      <img class="h-48 w-48 float-left m-4" src="../assets/img/img1.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit consectetur atque, quibusdam temporibus impedit doloremque quo eligendi accusamus. Porro a cumque dolor eaque voluptates modi cum. Accusantium alias aliquid consequuntur.
+        In doloremque maiores architecto sed soluta qui. Eveniet voluptate nobis iure, porro possimus in, libero alias excepturi est beatae, dolor dicta laudantium corporis ipsa? Repellat vitae reiciendis quisquam consectetur natus?</p>
+      </img>
+    </div>
+
+    <br />
+  </body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->
